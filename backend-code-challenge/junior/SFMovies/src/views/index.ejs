@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF Movies</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      ul{
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li{
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      form{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        width:300px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+      }
+
+      input[type="submit"] {
+        padding:8px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SF Movies Filming Locations</h1>
+      <form action="http://localhost:8000/api/searchMovies" method="get">
+        <input type="text" name="query" placeholder="Search movies...">
+        <input type="submit" value="Search">
+      </form>
+      <!-- <ul>
+        <% searchedResult.forEach(movie => { %>
+          <li>
+            <h2><%= movie.title %> (<%= movie.release_year %>)</h2>
+            <p><strong>Locations:</strong> <%= movie.locations %></p>
+            <p><strong>Production Comapny:</strong> <%= movie.production_company %></p>
+            <p><strong>Distributor:</strong> <%= movie.distributor %></p>
+            <p><strong>Writer:</strong> <%= movie.writer %></p>
+            <p><strong>Actors:</strong> <%= movie.actor_1 %> ,<%= movie.actor_2 %> </p>
+          </li>
+        <% }); %>
+      </ul> -->
+    </div>
+  </body>
+</html>
