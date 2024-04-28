@@ -13,12 +13,12 @@ This project provides an API for finding food trucks near a specific location.
 
 1.  Clone the repository:
 
-    - git clone https://github.com/adeoluwa/food-truck-finder.git
+    - git clone https://github.com/adeoluwa/codingchallenge.git
 
 2.  Install dependencies
 
-    ```bash
-    cd FoodTrucks
+    ```
+    cd codingchallenge/backend-code-challenge/junior/FoodTrucks
     npm install
 
     ```
